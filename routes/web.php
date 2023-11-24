@@ -1,5 +1,6 @@
 <?php
 
+use Filament\Http\Livewire\Auth\Login;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('admin/login', Login::class)->name('login');
