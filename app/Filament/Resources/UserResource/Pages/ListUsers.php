@@ -16,4 +16,9 @@ class ListUsers extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+
+    public function isTableSearchable(): bool
+    {
+        return true;
+    }
 }
